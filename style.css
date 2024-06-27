@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box ;
+}
+
+body{
+    min-height: 100vh;
+    background: #4070f4;
+}
+
+.wrapper{
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    background: #fff;
+    max-width: 350px;
+    padding: 15px 25px 22px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.wrapper.show{
+    right: 20px;
+}
+
+.wrapper header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+header i{
+    color: #4070f4;
+    font-size: 32px;
+}
+
+header h2{
+    font-weight: 500;
+    color: #4070f4;
+}
+
+.wrapper .data{
+    margin-top: 16px;
+}
+.wrapper .data p{
+   color: #333;
+   font-size: 16px;
+}
+
+.data p a{
+    text-decoration: none;
+    color: #4070f4;
+}
+
+.data p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.buttons .button{
+    width: calc(100% / 2 - 10px);
+    padding: 8px 0;
+    border: none;
+    color: #fff;
+    background: #4070f4;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+
+.buttons .button:hover{
+    background-color: #034bf1; 
+}
